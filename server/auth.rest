@@ -1,0 +1,12 @@
+GET http://localhost:8080/
+
+###
+
+POST http://localhost:8080/ HTTP/1.1
+{
+    username : "test",
+    password : "test",
+    email : "test@example.com",
+    name : "test",
+    phone : "0000000",
+}
