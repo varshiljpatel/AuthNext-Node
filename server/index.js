@@ -19,9 +19,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
+app.get('/', HCL.root);
 app.post('/', HCL.signUp);
 
 const PORT = process.env.PORT || 8080;

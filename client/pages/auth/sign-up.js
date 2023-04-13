@@ -21,7 +21,7 @@ const signup = () => {
                 e.preventDefault()
                 const {name, email, password, phone, username } = value;
                 console.log(value);
-                const res = await fetch('http://localhost:8080/', {
+                const res = await fetch('http://localhost:8080?apiId=51d6sv5S6BD5s8bvs65vs68v9dvsvsf&apiPassword=123123123123', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
